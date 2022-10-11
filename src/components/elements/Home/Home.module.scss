@@ -1,0 +1,64 @@
+@import "../../../style/variables.scss";
+
+.posters {
+    // background: url(../../../resurses/image/2.jpg) no-repeat;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    //top: 0;
+    height: 80vh;
+    .wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .poster {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            color: white;
+            height: 80vh;
+            .text {
+                width: 30%;
+                margin-left: 30%;
+                align-items: center;
+                justify-content: flex-start;
+                position: absolute;
+            }
+            .prev {
+                width: 30px;
+                height: 30px;
+                left: 10px;
+                align-items: center;
+                position: absolute;
+            }
+            .next {
+                width: 30px;
+                height: 30px;
+                right: 10px;
+                align-items: center;
+                position: absolute;
+            }
+            .next,
+            .prev {
+                &:hover {
+                    cursor: pointer;
+                    animation: resize 1s forwards;
+                    
+                }
+            }
+        }
+    }
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}

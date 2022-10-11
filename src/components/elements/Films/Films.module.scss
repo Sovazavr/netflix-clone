@@ -1,0 +1,95 @@
+@import "../../../style/variables.scss";
+
+.wrapper {
+    // display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    hr {
+        height: 2px;
+        color: $gray;
+        border: none;
+
+        background-color: rgba($gray, 0.5);
+        border-radius: 10px;
+        width: 80%;
+    }
+    .button_block {
+        margin: 10px 150px;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .button {
+            color: white;
+            border: none;
+            border-radius: 20px;
+            background-color: #1d1d21;
+            padding: 10px 20px;
+            &:hover {
+                cursor: pointer;
+                animation: onHoverButton 500ms forwards;
+            }
+            &.active {
+                background-color: $red;
+            }
+        }
+    }
+    .listener_block {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        justify-content: center;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .film {
+            display: inline-block;
+            margin: 10px;
+            width: 9.375rem;
+            height: 10.625rem;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+
+            border-radius: 10px;
+            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: none;
+            overflow-x: hidden;
+            word-wrap: break-word;
+
+            &:hover {
+                animation: onHover 500ms forwards;
+                .text,
+                .add {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.text {
+    font-size: 12px;
+    visibility: hidden;
+}
+.add {
+    visibility: hidden;
+    &:hover {
+        animation: onHover 0.4s forwards;
+        cursor: pointer;
+    }
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border: none;
+    background-color: rgba(#000000, 0.5);
+    color: #ffffff;
+    margin-top: 70%;
+    border-radius: 20px;
+}

@@ -1,0 +1,23 @@
+$gray: #9b9a97;
+$red: #c62e21;
+
+$id: 2;
+
+@keyframes onHover {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.07);
+	}
+}
+@keyframes onHoverButton {
+	from {
+		transform: scale(1);
+		
+	}
+	to {
+		transform: scale(1.07);
+		background-color: $red;
+	}
+}

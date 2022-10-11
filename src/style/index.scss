@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;600&display=swap");
+@import "./variables.scss";
+body,
+html {
+  background-color: #151518;
+  
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}  
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.wrapper {
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #303438;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
